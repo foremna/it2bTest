@@ -1,0 +1,38 @@
+.footer {
+    display: flex;
+    margin-top: 20px;
+    padding: 35px;
+    background-color: #f3f9ff;
+
+    .footer__nav {
+        display: flex;
+        width: 100%;
+    }
+
+    .nav {
+        display: flex;
+        flex-grow: 1;
+    }
+
+    .nav__list {
+        list-style-type: none;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    .nav__link-title {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: rgb(0, 64, 255);
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .nav__link {
+        font-size: 14px;
+        text-decoration: none;
+    }
+}
