@@ -419,6 +419,7 @@ main {
 
 .logotype__logo {
   width: 130px;
+  height: 100%;
 }
 
 .dev {
