@@ -1,8 +1,11 @@
 .footer {
     display: flex;
-    margin-top: 20px;
     padding: 35px;
     background-color: #f3f9ff;
+
+    @media screen and (max-width: 576px) {
+        flex-direction: column-reverse;
+    }
 
     .footer__nav {
         display: flex;
@@ -28,11 +31,25 @@
         font-size: 18px;
         color: rgb(0, 64, 255);
         font-weight: 500;
+        text-decoration: none;
         text-transform: uppercase;
+
+        @media screen and (max-width: 576px) {
+            font-size: 16px;
+        }
     }
 
     .nav__link {
         font-size: 14px;
         text-decoration: none;
+    }
+
+    .logotype {
+        @media screen and (max-width: 576px) {
+            display: flex;
+            flex-grow: 1;
+            justify-content: flex-end;
+            margin-bottom: 24px;
+        }
     }
 }
