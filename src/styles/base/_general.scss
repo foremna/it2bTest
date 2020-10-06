@@ -89,6 +89,10 @@ main {
     &:hover {
         color: rgb(0, 98, 179);
     }
+
+    @media screen and (max-width: 576px) {
+        margin-left: 0;
+    }
 }
 
 .languages {

@@ -509,6 +509,10 @@ header {
   justify-content: space-between;
 }
 
+.slogan {
+  font-size: 14px;
+}
+
 .footer {
   display: flex;
   padding: 35px;
@@ -562,6 +566,18 @@ header {
   .logotype__logo {
     width: 100px;
     height: 100%;
+  }
+
+  .button-change-languages {
+    margin-left: 0;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .slogan {
+    margin: 10px 0;
   }
 
   .footer {
