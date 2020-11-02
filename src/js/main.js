@@ -1,6 +1,13 @@
-let btnChangeLanguage = document.querySelector(".button-change-languages");
-let languagesList = document.querySelector(".languages__list");
+new SlimSelect({
+    select: '#single'
+})
 
-btnChangeLanguage.addEventListener("click", function() {
-    languagesList.classList.toggle("close");
-});
+var buttonChangeTheme = document.querySelector(".change-theme");
+var bodyBlock = document.querySelector("body");
+
+buttonChangeTheme.addEventListener("click", function() {
+    buttonChangeTheme.classList.toggle("change-theme--light")
+    buttonChangeTheme.classList.toggle("change-theme--dark")
+    bodyBlock.classList.toggle("page-light")
+    bodyBlock.classList.toggle("page-dark")
+})

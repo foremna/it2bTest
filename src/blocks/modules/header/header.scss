@@ -1,25 +1,125 @@
 header {
     position: fixed;
-    z-index: 9999;
     width: 100%;
-    background-color: #fff;
-    box-shadow: 0 0 0 1px #000;
+    backdrop-filter: blur(10px);
+    z-index: 9;
 }
 
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 23px;
 
     @media screen and (max-width: 576px) {
         flex-direction: column;
     }
 }
 
-.slogan {
-    font-size: 14px;
+.menu {
+    display: flex;
+    flex-grow: 1;
+    margin-left: 30px;
 
-    @media screen and (max-width: 576px) {
-        margin: 10px 0;
+    @media screen and (max-width: 1440px) {
+        margin-left: 42px;
+    }
+    
+    .menu__list {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    .menu__item {
+        &:not(:last-child) {
+            margin-right: 70px;
+        }
+    }
+
+    .menu__link {
+        font-size: 18px;
+        line-height: 22px;
+        color: #636369;
+        text-decoration: none;
+    }
+}
+
+.change-theme {
+    position: absolute;
+    right: 319px;
+    width: 60px;
+    height: 145px;
+    background: #F0F0F3;
+    border: none;
+    box-shadow: -3px -3px 10px #ffffff, 3px 3px 10px rgba(174, 174, 192, 0.5);
+    border-radius: 0 0 30px 30px;
+    transform: translateY(-20%);
+    transition: .5s ease all;
+
+    @media screen and (max-width: 1440px) {
+        right: 271px;
+    }
+
+    svg {
+        position: absolute;
+        bottom: 31px;
+        left: 50%;
+        width: 25px;
+        height: 27px;
+        transform: translateX(-50%);
+        transition: .5s ease all;
+    }
+
+    &:hover {
+        box-shadow: inset -10px -10px 10px rgba(255, 255, 255, 0.7), inset 10px 10px 10px rgba(174, 174, 192, 0.3);
+
+        svg {
+            transform: scale(1.1) translateX(-50%);
+        }
+    }
+}
+
+.accessibility {
+    position: absolute;
+    right: 228px;
+    width: 60px;
+    height: 145px;
+    background: #F0F0F3;
+    border: none;
+    box-shadow: -3px -3px 10px #ffffff, 3px 3px 10px rgba(174, 174, 192, 0.5);
+    border-radius: 0 0 30px 30px;
+    transform: translateY(-20%);
+    transition: .5s ease all;
+
+    @media screen and (max-width: 1440px) {
+        right: 180px;
+    }
+
+
+    svg {
+        position: absolute;
+        bottom: 31px;
+        left: 50%;
+        width: 44px;
+        height: 22px;
+        transform: translateX(-50%);
+        transition: .5s ease all;
+    }
+
+    .eye-big {
+        display: none;
+    }
+
+    &:hover {
+        box-shadow: inset -10px -10px 10px rgba(255, 255, 255, 0.7), inset 10px 10px 10px rgba(174, 174, 192, 0.3);
+
+        .eye {
+            display: none;
+        }
+
+        .eye-big {
+            display: block;
+        }
     }
 }

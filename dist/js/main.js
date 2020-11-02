@@ -150,10 +150,16 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var btnChangeLanguage = document.querySelector(".button-change-languages");
-var languagesList = document.querySelector(".languages__list");
-btnChangeLanguage.addEventListener("click", function () {
-  languagesList.classList.toggle("close");
+new SlimSelect({
+  select: '#single'
+});
+var buttonChangeTheme = document.querySelector(".change-theme");
+var bodyBlock = document.querySelector("body");
+buttonChangeTheme.addEventListener("click", function () {
+  buttonChangeTheme.classList.toggle("change-theme--light");
+  buttonChangeTheme.classList.toggle("change-theme--dark");
+  bodyBlock.classList.toggle("page-light");
+  bodyBlock.classList.toggle("page-dark");
 });
 
 /***/ })

@@ -1,0 +1,23 @@
+.ss-main {
+    width: 120px !important;
+}
+
+.ss-main .ss-single-selected {
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.ss-content {
+    border: none !important;
+    background-color: transparent !important;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px rgba(174, 174, 192, 0.5);
+}
+
+.ss-content .ss-search {
+    display: none !important;
+}
+
+.ss-content .ss-list {
+    backdrop-filter: blur(10px);
+}
