@@ -23,6 +23,7 @@
         <link rel="stylesheet" href="styles/main.css">
 
         <!-- libs -->
+        <link rel="stylesheet" href="./libs/normalize.scss">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.26.0/slimselect.min.js"></script>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.26.0/slimselect.min.css" rel="stylesheet"></link>
     </head>
@@ -54,8 +55,8 @@
                 <svg class="moon">
                     <use xlink:href="./img/svg/sprites.svg#moon"></use>
                 </svg>
-                <svg class="moon-big">
-                    <use xlink:href="./img/svg/sprites.svg#moon-big"></use>
+                <svg class="sun">
+                    <use xlink:href="./img/svg/sprites.svg#sun"></use>
                 </svg>
             </button>
             <button class="accessibility">
@@ -65,21 +66,37 @@
                 <svg class="eye-big">
                     <use xlink:href="./img/svg/sprites.svg#eye-big"></use>
                 </svg>
+                <svg class="eye-black">
+                    <use xlink:href="./img/svg/sprites.svg#eye-black"></use>
+                </svg>
+                <svg class="eye-black-big">
+                    <use xlink:href="./img/svg/sprites.svg#eye-black-big"></use>
+                </svg>
             </button>
         </div>
     </header>
 
     <main id="page">
 		
-		<img src="img/svg/graphFormRight.svg" class="formRight" alt="">
-		<img src="img/svg/graphFormLeft.svg" class="formLeft" alt="">
-		<img src="img/svg/graphFormLeftTwo.svg" class="formLeftTwo" alt="">
-		<img src="img/svg/graphFormRightTwo.svg" class="formRightTwo" alt="">
+		<!-- graph form light -->
+		<img src="img/svg/graphFormRight.svg" class="formRight formLight" alt="">
+		<img src="img/svg/graphFormLeft.svg" class="formLeft formLight" alt="">
+		<img src="img/svg/graphFormLeftTwo.svg" class="formLeftTwo formLight" alt="">
+		<img src="img/svg/graphFormRightTwo.svg" class="formRightTwo formLight" alt="">
+		
+		<!-- graph form black -->
+		<img src="img/svg/graphFormRightBlack.svg" class="formRight formBlack" alt="">
+		<img src="img/svg/graphFormLeftBlack.svg" class="formLeft formBlack" alt="">
+		<img src="img/svg/graphFormLeftTwoBlack.svg" class="formLeftTwo formBlack" alt="">
+		<img src="img/svg/graphFormRightTwoBlack.svg" class="formRightTwo formBlack" alt="">
 
         <section class="container">
 			<div class="greeting-text">
-				<img src="img/svg/it2b-circle-i.svg" class="img-circle-i" alt="">
-				<img src="img/svg/it2b-ru.svg" alt="">
+				<img src="img/svg/it2b-circle-i.svg" class="img-circle-i img-circle-i--light" alt="">
+				<img src="img/svg/it2b-ru.svg" class="it2b-logo it2b-logo--light" alt="">
+
+				<img src="img/svg/it2b-circle-i-black.svg" class="img-circle-i img-circle-i--black" alt="">
+				<img src="img/svg/it2b-ru-black.svg" class="it2b-logo it2b-logo--black" alt="">
 			</div>
 			<div class="block-show-portfolio">
 				<button class="show-portfolio">
@@ -102,15 +119,18 @@
 					</span>
 					<div class="features">
 						<div class="feature">
-							<img src="img/svg/service-item1-ru.svg" alt="">
+							<img src="img/svg/service-item1-ru.svg" class="feature__img feature__img--light" alt="">
+							<img src="img/svg/service-item1-ru-black.svg" class="feature__img feature__img--black" alt="">
 							<span class="feature__text">Сплоченная команда</span>
 						</div>
 						<div class="feature">
-							<img src="img/svg/service-item2-ru.svg" alt="">
+							<img src="img/svg/service-item2-ru.svg" class="feature__img feature__img--light" alt="">
+							<img src="img/svg/service-item2-ru-black.svg" class="feature__img feature__img--black" alt="">
 							<span class="feature__text">Налаженный процесс работы</span>
 						</div>
 						<div class="feature">
-							<img src="img/svg/service-item3-ru.svg" alt="">
+							<img src="img/svg/service-item3-ru.svg" class="feature__img feature__img--light" alt="">
+							<img src="img/svg/service-item3-ru-black.svg" class="feature__img feature__img--black" alt="">
 							<span class="feature__text">Соблюдение дедлайнов</span>
 						</div>
 					</div>
@@ -207,6 +227,8 @@
         </footer>
 
         <script src="js/main.js"></script>
+
+        <!-- libs -->
     </body>
 </html>
 

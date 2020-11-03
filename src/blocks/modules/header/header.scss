@@ -64,18 +64,24 @@ header {
     svg {
         position: absolute;
         bottom: 31px;
-        left: 50%;
+        left: 19px;
         width: 25px;
         height: 27px;
-        transform: translateX(-50%);
         transition: .5s ease all;
+    }
+
+    .sun {
+        display: none;
+        width: 30px;
+        height: 30px;
+        left: 16px;
     }
 
     &:hover {
         box-shadow: inset -10px -10px 10px rgba(255, 255, 255, 0.7), inset 10px 10px 10px rgba(174, 174, 192, 0.3);
 
         svg {
-            transform: scale(1.1) translateX(-50%);
+            transform: scale(1.1);
         }
     }
 }
@@ -100,14 +106,21 @@ header {
     svg {
         position: absolute;
         bottom: 31px;
-        left: 50%;
+        left: 7.5px;
         width: 44px;
         height: 22px;
-        transform: translateX(-50%);
         transition: .5s ease all;
     }
 
     .eye-big {
+        display: none;
+    }
+
+    .eye-black {
+        display: none;
+    }
+
+    .eye-black-big {
         display: none;
     }
 

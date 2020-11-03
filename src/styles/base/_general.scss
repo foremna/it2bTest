@@ -1,11 +1,12 @@
 body {
     position: relative;
     background: #F0F0F3;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     color: $gray;
     overflow-x: hidden;
     counter-reset: section;
     scroll-behavior: smooth;
+    transition: .3s ease all;
 }
 
 h1, h2, h3, h4, h5, h6, ul {
@@ -152,6 +153,10 @@ main {
     bottom: -140px;
     right: 0;
     z-index: 99;
+}
+
+.formBlack {
+    display: none;
 }
 
 .form {
@@ -327,7 +332,6 @@ main {
     }
 }
 
-
 .logotype__logo {
     width: 104px;
 
@@ -335,6 +339,10 @@ main {
         width: 100px;
         height: 100%;
     }
+}
+
+.it2b-logo--black {
+    display: none;
 }
 
 .dev {
@@ -404,6 +412,10 @@ main {
             left: 41px;
         }
     }
+}
+
+.img-circle-i--black {
+    display: none;
 }
 
 .block-show-portfolio {
@@ -539,6 +551,10 @@ main {
     }
 }
 
+.feature__img--black {
+    display: none;
+}
+
 .important {
     position: relative;
     padding: 50px 250px;
@@ -619,4 +635,161 @@ main {
 
 .page-dark {
     background: #252525;
+    color: rgba(255, 255, 255, 0.6);
+    transition: .3s ease all;
+
+    .menu__link {
+        color: rgba(255, 255, 255, 0.6) !important;
+    }
+
+    .ss-main {
+        color: rgba(255, 255, 255, 0.6) !important;
+    }
+
+    .change-theme,
+    .accessibility {
+        background: #252525;
+        box-shadow: -10px -10px 15px rgba(56, 56, 56, 0.7), 10px 10px 15px rgba(0, 0, 0, 0.4);
+
+        &:hover {
+            box-shadow: inset -10px -10px 10px rgba(56, 56, 56, 0.6), inset 10px 10px 10px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    .change-theme {
+        .moon {
+            display: none;
+        }
+
+        .sun {
+            display: block !important;
+            animation: rotation-ease 1s 1 linear;
+            animation-fill-mode: forwards;
+        }
+    }
+
+    .accessibility {
+        .eye {
+            display: none;
+        }
+
+        .eye-black {
+            display: block;
+        }
+
+        &:hover {
+            .eye-black {
+                display: none;
+            }
+
+            .eye-black-big {
+                display: block;
+            }
+        }
+    }
+
+    .show-portfolio {
+        background: #252525;
+        box-shadow: -10px -10px 30px rgba(56, 56, 56, 0.7), 10px 10px 30px #000000;
+
+        &:focus {
+            box-shadow: inset -10px -10px 10px rgba(56, 56, 56, 0.6), inset 10px 10px 10px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    .section-number {
+        &:before {
+            color: #252525;
+            text-shadow: -10px -10px 30px rgba(56, 56, 56, 0.7), 10px 10px 30px #000000;
+        }
+    }
+
+    .input-container {
+        input {
+            caret-color: rgba(255, 255, 255, 0.6);
+
+            &:focus {
+                +.title-input {
+                    background-color: #252525;
+                }
+            }
+        }
+
+        .title-input {
+            color: rgba(255, 255, 255, 0.6) !important;
+        }
+    }
+
+    .textarea-container {
+        textarea {
+            caret-color: rgba(255, 255, 255, 0.6);
+
+            &:focus {
+                +.title-input {
+                    background-color: #252525;
+                }
+            }
+        }
+
+        .title-input {
+            color: rgba(255, 255, 255, 0.6) !important;
+        }
+    }
+
+    .formLight {
+        display: none;
+    }
+
+    .formBlack {
+        display: block;
+    }
+
+    .it2b-logo--light {
+        display: none;
+    }
+
+    .it2b-logo--black {
+        display: block;
+    }
+
+    .img-circle-i--light {
+        display: none;
+    }
+
+    .img-circle-i--black {
+        display: block;
+    }
+
+    .feature__img--light {
+        display: none;
+    }
+
+    .feature__img--black {
+        display: block;
+    }
+
+    .feature__text {
+        color: rgba(255, 255, 255, 0.6) !important;
+    }
+
+    .services__item {
+        color: rgba(255, 255, 255, 0.6) !important;
+    }
+
+    .headline-primary {
+        color: rgba(255, 255, 255, 0.6) !important;
+    }
+
+    .form {
+        background: #252525;
+        box-shadow: -10px -10px 30px rgba(56, 56, 56, 0.4), 10px 10px 40px rgba(0, 0, 0, 0.7);
+    }
+
+    .form__title {
+        color: rgba(255, 255, 255, 0.6) !important;
+    }
+
+    .form__text {
+        color: rgba(255, 255, 255, 0.6) !important;
+    }
 }
