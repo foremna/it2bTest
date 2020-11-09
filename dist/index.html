@@ -36,12 +36,18 @@
     <header>
         <div class="header container">
             <a href="#" class="logotype"><img class="logotype__logo" src="./img/svg/logo.svg" alt="Логотип компании it2b"></a>
-            <nav class="menu">
+            <button class="hamburger">
+                <div class="hamburger__line"></div>
+                <div class="hamburger__line"></div>
+                <div class="hamburger__line"></div>
+            </button>
+            <nav class="menu menu--close">
                 <ul class="menu__list">
                     <li class="menu__item"><a href="#about" class="menu__link"><span>О нас</span></a></li>
                     <li class="menu__item"><a href="#services" class="menu__link"><span>Услуги</span></a></li>
                     <li class="menu__item"><a href="#contact" class="menu__link"><span>Контакты</span></a></li>
                 </ul>
+                <a href="#" class="logotype"><img class="logotype__logo" src="./img/svg/logo.svg" alt="Логотип компании it2b"></a>
             </nav>
             <div class="languages">
                 <select id="single" class="languages__list">
@@ -108,7 +114,7 @@
 		<section class="section section--down-right-line container" id="about">
 			<div class="wrapper">
 				<div class="about">
-					<img src="img/svg/about-headline.svg" class="about-headline" alt="">
+					<img src="img/svg/about-headline.svg" class="section-headline" alt="">
 					<span class="section-number"></span>
 					<span class="about-text">
 						Компания <b>IT2B</b> занимается разработкой <b>инновационных решений и сайтов</b> для Вашего бизнеса.
@@ -147,7 +153,7 @@
 
 		<section class="section section--down-right-line container" id="services">
 			<div class="service">
-				<img src="img/svg/service-headline.svg" class="about-headline" alt="">
+				<img src="img/svg/service-headline.svg" class="section-headline" alt="">
 				<span class="section-number"></span>
 			</div>
 			<div class="down-line-section">
@@ -163,7 +169,7 @@
 							<li class="services__item"><span>Обслуживание Вашего сайта</span></li>
 						</ul>
 					</div>
-					<h2 class="headline-primary">Какие сайты мы разрабатываем</h2>
+					<h2 class="headline-primary">Какие сайты <br> мы разрабатываем</h2>
 					<div class="services">
 						<ul class="services__list">
 							<li class="services__item"><span>Корпоративный сайт</span></li>
@@ -212,15 +218,15 @@
 
         <footer>
             <div class="footer container">
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <p class="menu__title">Меню</p>
-                        <li class="menu__item"><a href="#" class="menu__link"><span>О нас</span></a></li>
-                        <li class="menu__item"><a href="#" class="menu__link"><span>Услуги</span></a></li>
+                <nav class="menu-footer">
+                    <ul class="menu-footer__list">
+                        <p class="menu-footer__title">Меню</p>
+                        <li class="menu-footer__item"><a href="#" class="menu-footer__link"><span>О нас</span></a></li>
+                        <li class="menu-footer__item"><a href="#" class="menu-footer__link"><span>Услуги</span></a></li>
                     </ul>
-                    <ul class="menu__list">
-                        <p class="menu__title" id="contact">Контакты</p>
-                        <li class="menu__item"><a href="mailto: it2b.co.il@gmail.com" class="menu__link"><span>it2b.co.il@gmail.com</span></a></li>
+                    <ul class="menu-footer__list">
+                        <p class="menu-footer__title" id="contact">Контакты</p>
+                        <li class="menu-footer__item"><a href="mailto: it2b.co.il@gmail.com" class="menu-footer__link"><span>it2b.co.il@gmail.com</span></a></li>
                     </ul>
                 </nav>
             </div>
