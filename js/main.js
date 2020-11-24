@@ -163,7 +163,7 @@ var select = new SlimSelect({
     text: '',
     value: 'English'
   }, {
-    innerHTML: '<a href="#" class="languages__link languages__link--il"><span>עִבְרִית</span></a>',
+    innerHTML: '<a href="https://foremna.github.io/it2b-test-il/" class="languages__link languages__link--il"><span>עִבְרִית</span></a>',
     text: '',
     value: 'עִבְרִית'
   }, {
