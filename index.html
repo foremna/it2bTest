@@ -1,17 +1,17 @@
 		<!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>IT2B</title>
         <!-- Google Tag Manager -->
         <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-MVFCRBC');
-        </script> -->
-            <!-- End Google Tag Manager -->
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-MVFCRBC');
+            </script> -->
+        <!-- End Google Tag Manager -->
         <meta name="theme-color" content="#fff">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -24,65 +24,63 @@
 
         <!-- libs -->
         <link rel="stylesheet" href="./libs/normalize.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.26.0/slimselect.min.js"></script>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.26.0/slimselect.min.css" rel="stylesheet"></link>
+        <link rel="stylesheet" href="./libs/slimselect.min.css">
+        <script src="./libs/slimselect.min.js"></script>
     </head>
-<body class="page-light">
-    <!-- Google Tag Manager (noscript) -->
-    <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVFCRBC"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
+    <body class="page-light">
+        <!-- Google Tag Manager (noscript) -->
+        <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVFCRBC"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript> -->
         <!-- End Google Tag Manager (noscript) -->
 
-    <header>
-        <div class="header container">
-            <a href="#" class="logotype"><img class="logotype__logo" src="./img/svg/logo.svg" alt="Логотип компании it2b"></a>
-            <button class="hamburger">
-                <div class="hamburger__line"></div>
-                <div class="hamburger__line"></div>
-                <div class="hamburger__line"></div>
-            </button>
-            <nav class="menu menu--close">
-                <ul class="menu__list">
-                    <li class="menu__item"><a href="#about" class="menu__link"><span>О нас</span></a></li>
-                    <li class="menu__item"><a href="#services" class="menu__link"><span>Услуги</span></a></li>
-                    <li class="menu__item"><a href="#contact" class="menu__link"><span>Контакты</span></a></li>
-                </ul>
+        <header>
+            <div class="header container">
                 <a href="#" class="logotype"><img class="logotype__logo" src="./img/svg/logo.svg" alt="Логотип компании it2b"></a>
-            </nav>
-            <div class="languages">
-                <select id="single" class="languages__list">
-                    <option value="Russian" class="languages__item languages__item--ru"><a href="#" class="languages__link"><span>Russian</span></a></option>
-                    <option value="English" class="languages__item languages__item--en"><a href="#" class="languages__link"><span>English</span></a></option>
-                    <option value="עִבְרִית" class="languages__item languages__item--il"><a href="#" class="languages__link"><span>עִבְרִית</span></a></option>
-                    <option value="العربية" class="languages__item languages__item--ar"><a href="#" class="languages__link"><span>العربية</span></a></option>
-                </select>
+                <button class="hamburger">
+                    <div class="hamburger__line"></div>
+                    <div class="hamburger__line"></div>
+                    <div class="hamburger__line"></div>
+                </button>
+                <nav class="menu menu--close">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#about" class="menu__link"><span>О нас</span></a></li>
+                        <li class="menu__item"><a href="#services" class="menu__link"><span>Услуги</span></a></li>
+                        <li class="menu__item"><a href="#contact" class="menu__link"><span>Контакты</span></a></li>
+                    </ul>
+                    <a href="#" class="logotype"><img class="logotype__logo" src="./img/svg/logo.svg" alt="Логотип компании it2b"></a>
+                </nav>
+                <div class="languages">
+                    <div class="languages">
+                        <select id="select-innerHTML" class="languages__list"></select>
+                    </div>
+                </div>
+                <button class="change-theme change-theme--light">
+                    <svg class="moon">
+                        <use xlink:href="./img/svg/sprites.svg#moon"></use>
+                    </svg>
+                    <svg class="sun">
+                        <use xlink:href="./img/svg/sprites.svg#sun"></use>
+                    </svg>
+                </button>
+                <button class="accessibility">
+                    <svg class="eye">
+                        <use xlink:href="./img/svg/sprites.svg#eye"></use>
+                    </svg>
+                    <svg class="eye-big">
+                        <use xlink:href="./img/svg/sprites.svg#eye-big"></use>
+                    </svg>
+                    <svg class="eye-black">
+                        <use xlink:href="./img/svg/sprites.svg#eye-black"></use>
+                    </svg>
+                    <svg class="eye-black-big">
+                        <use xlink:href="./img/svg/sprites.svg#eye-black-big"></use>
+                    </svg>
+                </button>
             </div>
-            <button class="change-theme change-theme--light">
-                <svg class="moon">
-                    <use xlink:href="./img/svg/sprites.svg#moon"></use>
-                </svg>
-                <svg class="sun">
-                    <use xlink:href="./img/svg/sprites.svg#sun"></use>
-                </svg>
-            </button>
-            <button class="accessibility">
-                <svg class="eye">
-                    <use xlink:href="./img/svg/sprites.svg#eye"></use>
-                </svg>
-                <svg class="eye-big">
-                    <use xlink:href="./img/svg/sprites.svg#eye-big"></use>
-                </svg>
-                <svg class="eye-black">
-                    <use xlink:href="./img/svg/sprites.svg#eye-black"></use>
-                </svg>
-                <svg class="eye-black-big">
-                    <use xlink:href="./img/svg/sprites.svg#eye-black-big"></use>
-                </svg>
-            </button>
-        </div>
-    </header>
+        </header>
 
-    <main id="page">
+        <main id="page">
 		
 		<!-- graph form light -->
 		<img src="img/svg/graphFormRight.svg" class="formRight formLight" alt="">
@@ -99,15 +97,15 @@
         <section class="container">
 			<div class="greeting-text">
 				<img src="img/svg/it2b-circle-i.svg" class="img-circle-i img-circle-i--light" alt="">
-				<img src="img/svg/it2b-ru.svg" class="it2b-logo it2b-logo--light" alt="">
+				<img src="img/png/it2b-ru.png" class="it2b-logo it2b-logo--light" alt="">
 
 				<img src="img/svg/it2b-circle-i-black.svg" class="img-circle-i img-circle-i--black" alt="">
-				<img src="img/svg/it2b-ru-black.svg" class="it2b-logo it2b-logo--black" alt="">
+				<img src="img/png/it2b-ru-black.png" class="it2b-logo it2b-logo--black" alt="">
 			</div>
 			<div class="block-show-portfolio">
-				<button class="show-portfolio">
+				<a href="projects.html" class="show-portfolio">
 					<div class="text"></div>
-				</button>
+				</a>
 			</div>
 		</section>
 		
@@ -125,18 +123,18 @@
 					</span>
 					<div class="features">
 						<div class="feature">
-							<img src="img/svg/service-item1-ru.svg" class="feature__img feature__img--light" alt="">
-							<img src="img/svg/service-item1-ru-black.svg" class="feature__img feature__img--black" alt="">
+							<img src="img/png/service-item1-ru.png" class="feature__img feature__img--light" alt="">
+							<img src="img/png/service-item1-ru-black.png" class="feature__img feature__img--black" alt="">
 							<span class="feature__text">Сплоченная команда</span>
 						</div>
 						<div class="feature">
-							<img src="img/svg/service-item2-ru.svg" class="feature__img feature__img--light" alt="">
-							<img src="img/svg/service-item2-ru-black.svg" class="feature__img feature__img--black" alt="">
+							<img src="img/png/service-item2-ru.png" class="feature__img feature__img--light" alt="">
+							<img src="img/png/service-item2-ru-black.png" class="feature__img feature__img--black" alt="">
 							<span class="feature__text">Налаженный процесс работы</span>
 						</div>
 						<div class="feature">
-							<img src="img/svg/service-item3-ru.svg" class="feature__img feature__img--light" alt="">
-							<img src="img/svg/service-item3-ru-black.svg" class="feature__img feature__img--black" alt="">
+							<img src="img/png/service-item3-ru.png" class="feature__img feature__img--light" alt="">
+							<img src="img/png/service-item3-ru-black.png" class="feature__img feature__img--black" alt="">
 							<span class="feature__text">Соблюдение дедлайнов</span>
 						</div>
 					</div>
