@@ -482,30 +482,30 @@ main {
   margin-right: 400px;
 }
 
-.languages__list {
+.language__list {
   width: 70px;
 }
 
-.languages__list .languages__link {
+.language__list .languages__link {
   display: block;
   font-size: 14px;
   color: slategrey;
   text-decoration: none;
 }
 
-.languages__list .languages__link.languages__link--en {
+.language__list .languages__link.languages__link--en {
   color: #21BBFE;
 }
 
-.languages__list .languages__link.languages__link--il {
+.language__list .languages__link.languages__link--il {
   color: #1A7BFF;
 }
 
-.languages__list .languages__link.languages__link--ar {
+.language__list .languages__link.languages__link--ar {
   color: #149B6A;
 }
 
-.languages__list.close {
+.language__list.close {
   display: none;
   transition: .3s ease all;
 }
@@ -1500,7 +1500,7 @@ footer {
   }
 
   .languages {
-    margin-right: 45px;
+    margin-right: 95px;
   }
 
   .greeting-text {
@@ -1897,7 +1897,7 @@ footer {
   }
 
   .languages {
-    margin-right: 85px;
+    margin-right: 165px;
   }
 
   .greeting-text {
@@ -2251,7 +2251,7 @@ footer {
   }
 
   .languages {
-    margin-right: 135px;
+    margin-right: 260px;
   }
 
   .greeting-text {
@@ -2556,7 +2556,7 @@ footer {
   }
 
   .languages {
-    margin-right: 185px;
+    margin-right: 350px;
   }
 
   .greeting-text {
